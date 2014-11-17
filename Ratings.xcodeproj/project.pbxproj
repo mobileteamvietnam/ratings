@@ -42,6 +42,7 @@
 		C35C5D041A15A0B900E94C8F /* Players@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C35C5CEC1A15A0B900E94C8F /* Players@2x.png */; };
 		C35C5D071A15A21C00E94C8F /* PlayerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C5D061A15A21C00E94C8F /* PlayerCell.m */; };
 		C35C5D0A1A15B19300E94C8F /* PlayerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C35C5D091A15B19300E94C8F /* PlayerDetailsViewController.m */; };
+		C368B3181A19941D000BDF4D /* GamePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C368B3171A19941D000BDF4D /* GamePickerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,8 @@
 		C35C5D061A15A21C00E94C8F /* PlayerCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerCell.m; sourceTree = "<group>"; };
 		C35C5D081A15B19300E94C8F /* PlayerDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerDetailsViewController.h; sourceTree = "<group>"; };
 		C35C5D091A15B19300E94C8F /* PlayerDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerDetailsViewController.m; sourceTree = "<group>"; };
+		C368B3161A19941D000BDF4D /* GamePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GamePickerViewController.h; sourceTree = "<group>"; };
+		C368B3171A19941D000BDF4D /* GamePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GamePickerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				C35C5D061A15A21C00E94C8F /* PlayerCell.m */,
 				C35C5D081A15B19300E94C8F /* PlayerDetailsViewController.h */,
 				C35C5D091A15B19300E94C8F /* PlayerDetailsViewController.m */,
+				C368B3161A19941D000BDF4D /* GamePickerViewController.h */,
+				C368B3171A19941D000BDF4D /* GamePickerViewController.m */,
 			);
 			path = Ratings;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 				C35C5CAE1A14A26F00E94C8F /* AppDelegate.m in Sources */,
 				C35C5CD01A14AC2600E94C8F /* PlayersViewController.m in Sources */,
 				C35C5CAB1A14A26F00E94C8F /* main.m in Sources */,
+				C368B3181A19941D000BDF4D /* GamePickerViewController.m in Sources */,
 				C35C5D071A15A21C00E94C8F /* PlayerCell.m in Sources */,
 				C35C5CD31A14AC8B00E94C8F /* Player.m in Sources */,
 				C35C5D0A1A15B19300E94C8F /* PlayerDetailsViewController.m in Sources */,

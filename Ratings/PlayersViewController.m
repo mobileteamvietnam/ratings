@@ -131,4 +131,10 @@
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)playerDetailsViewControllerDidCancel:(PlayerDetailsViewController *)controller
+{
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
 @end

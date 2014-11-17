@@ -128,19 +128,19 @@
         <scene sceneID="M4y-Mo-6Rx">
             <objects>
                 <tableViewController id="AlA-bg-BUT" customClass="PlayerDetailsViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nyd-9h-Vol">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="nyd-9h-Vol">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
-                            <tableViewSection headerTitle="Player Name" id="Jws-r5-9qE">
+                            <tableViewSection headerTitle="PLAYER NAME" id="Jws-r5-9qE">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mZx-SO-aW3">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="mZx-SO-aW3">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mZx-SO-aW3" id="7G6-lq-OzH">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NjM-KF-LMb">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NjM-KF-LMb">
                                                     <rect key="frame" x="8" y="5" width="304" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -152,7 +152,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="  " id="NCT-vl-DT8">
                                 <cells>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="o2d-Uy-RMR" detailTextLabel="tSy-lH-xcy" style="IBUITableViewCellStyleValue1" id="DWV-Pu-A0S">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="o2d-Uy-RMR" detailTextLabel="tSy-lH-xcy" style="IBUITableViewCellStyleValue1" id="DWV-Pu-A0S">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DWV-Pu-A0S" id="G9Q-dx-uyl">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -171,6 +171,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="czY-zh-xOt" kind="push" identifier="PickGame" id="fy2-fd-JIY"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -200,6 +203,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e8n-q0-9RN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1656" y="-11"/>
+        </scene>
+        <!--Choose Game-->
+        <scene sceneID="SNS-ZQ-wXj">
+            <objects>
+                <tableViewController id="czY-zh-xOt" customClass="GamePickerViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="MRS-AH-oRv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GameCell" textLabel="JDN-KC-uaT" style="IBUITableViewCellStyleDefault" id="Xuq-Tv-IXG">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xuq-Tv-IXG" id="HDX-GT-kLh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JDN-KC-uaT">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="czY-zh-xOt" id="ZMo-t3-Kp9"/>
+                            <outlet property="delegate" destination="czY-zh-xOt" id="ccf-QC-UNK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Choose Game" id="yih-Eg-8De"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BTu-zN-Pum" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2059" y="-14"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Z1s-F7-WpI">
